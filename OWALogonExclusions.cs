@@ -515,7 +515,7 @@ namespace OWALogonExclusions
                         grpOWAExclusions = new GroupPrincipal(ctxExclusionGroupLocation);
                         grpOWAExclusions.Name = "OWALogonExclusions";
                         grpOWAExclusions.SamAccountName = "OWALogonExclusions";
-                        grpOWAExclusions.Description = "SystemsAdminPro Exclusions";
+                        grpOWAExclusions.Description = "OWA Logon Exclusions";
                         grpOWAExclusions.Save();
                     }
 
