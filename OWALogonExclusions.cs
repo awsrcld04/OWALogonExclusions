@@ -357,13 +357,10 @@ namespace OWALogonExclusions
             dCatchTable.Add("funcCreateDSSearcher", "f3");
             dCatchTable.Add("funcCreatePrincipalContext", "f4");
             dCatchTable.Add("funcGetFuncCatchCode", "f5");
-            dCatchTable.Add("funcLicenseActivation", "f6");
-            dCatchTable.Add("funcLicenseCheck", "f7");
             dCatchTable.Add("funcOpenOutputLog", "f8");
             dCatchTable.Add("funcParseCmdArguments", "f9");
             dCatchTable.Add("funcParseConfigFile", "f10");
-            dCatchTable.Add("funcPortableLicenseCheck", "f11");
-            dCatchTable.Add("funcPrintParameterSyntax", "f12");
+              dCatchTable.Add("funcPrintParameterSyntax", "f12");
             dCatchTable.Add("funcPrintParameterWarning", "f13");
             dCatchTable.Add("funcProgramExecution", "f14");
             dCatchTable.Add("funcProgramRegistryTag", "f15");
