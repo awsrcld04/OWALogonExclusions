@@ -93,7 +93,7 @@ namespace OWALogonExclusions
 
         static void funcPrintParameterSyntax()
         {
-            Console.WriteLine("OWALogonExclusions v1.0 (c) 2011 SystemsAdminPro.com");
+            Console.WriteLine("OWALogonExclusions v1.0");
             Console.WriteLine();
             Console.WriteLine("Description: Find OWA logons and create exclusions");
             Console.WriteLine();
