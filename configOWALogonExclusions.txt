@@ -1,0 +1,5 @@
+// Location to find OWA log files
+OWALogFileLocation=C:\WINDOWS\system32\LogFiles\W3SVC1
+
+// OU location in Active Directory to create OWALoginExclusions group
+ExclusionGroupLocation=CN=Users,DC=mylab,DC=invalid
