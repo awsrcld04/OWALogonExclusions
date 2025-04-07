@@ -479,8 +479,6 @@ namespace OWALogonExclusions
 
                     funcToEventLog("OWALogonExclusions", "OWALogonExclusions started", 100);
 
-                    funcProgramRegistryTag("OWALogonExclusions");
-
                     TextWriter twCurrent = funcOpenOutputLog();
                     string strOutputMsg = "";
 
