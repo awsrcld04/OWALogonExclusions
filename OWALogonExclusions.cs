@@ -338,7 +338,6 @@ namespace OWALogonExclusions
               dCatchTable.Add("funcPrintParameterSyntax", "f12");
             dCatchTable.Add("funcPrintParameterWarning", "f13");
             dCatchTable.Add("funcProgramExecution", "f14");
-            dCatchTable.Add("funcProgramRegistryTag", "f15");
             dCatchTable.Add("funcRecurse", "f16");
             dCatchTable.Add("funcToEventLog", "f17");
             dCatchTable.Add("funcWriteToErrorLog", "f18");
