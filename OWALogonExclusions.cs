@@ -85,46 +85,6 @@ namespace OWALogonExclusions
             public string strExclusionGroupLocation;
         }
 
-         static bool funcPortableLicenseCheck()
-        {
-            try
-            {
-                string strPortableLicense = String.Empty;
-
-                if (funcCheckForFile("SystemsAdminPro.app"))
-                {
-                    TextReader trPortableLicense = new StreamReader("SystemsAdminPro.app");
-                    strPortableLicense = trPortableLicense.ReadLine();
-                    trPortableLicense.Close();
-
-                    Domain dmCurrent = Domain.GetCurrentDomain();
-                    DirectoryEntry domainDE = dmCurrent.GetDirectoryEntry();
-                    Guid dmGUID = domainDE.Guid;
-                    //[DebugLine] Console.WriteLine(dmGUID.ToString());
-                    Sentinel newSentinel = new Sentinel();
-                    newSentinel.funcServe(strPortableLicense);
-                    if (dmGUID.ToString() == newSentinel.strData)
-                    {
-                        return true;
-                    }
-                    else
-                    {
-                        return false;
-                    }
-                }
-                else
-                {
-                    return false;
-                }
-            }
-            catch (Exception ex)
-            {
-                MethodBase mb1 = MethodBase.GetCurrentMethod();
-                funcGetFuncCatchCode(mb1.Name, ex);
-                return false;
-            }
-        }
-
         static void funcPrintParameterWarning()
         {
             Console.WriteLine("A parameter is missing or is incorrect.");
